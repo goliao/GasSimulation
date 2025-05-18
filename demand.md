@@ -1,18 +1,9 @@
-<think>I need to rewrite the formula for the elasticity-adjusted AR(1) process using standard economic notation. I'll make this concise, formal, and appropriate for an economist.
-
-I should use:
-- Proper mathematical notation
-- Standard economic variables
-- Clear explanation of each parameter
-- Maintain accuracy with the implementation in the code
-
-I'll create a clear mathematical representation of how the price elasticity affects demand in an AR(1) process.</think># Price-Elastic Demand in an AR(1) Process: Mathematical Formulation
 
 ## Elasticity-Adjusted AR(1) Process
 
 Let $D_t$ be the gas demand at time $t$. The process combines price elasticity with an autoregressive component:
 
-$$D_t = \max\{0, \mu_t + \rho(D_{t-1} - \mu_t) + \varepsilon_t\}$$
+$$D_t = \mu_t + \rho(D_{t-1} - \mu_t) + \varepsilon_t\$$
 
 where:
 - $\varepsilon_t \sim N(0, \sigma^2)$ is the random shock
